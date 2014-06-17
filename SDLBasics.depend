@@ -1,0 +1,37 @@
+# depslib dependency file v1.0
+1392654781 source:/home/jesse/TestCB/SDLBasics/CApp.cpp
+	"CApp.h"
+	<iostream>
+
+1359284630 /home/jesse/TestCB/SDLBasics/CApp.h
+	<SDL.h>
+	"CEvent.h"
+	"CSurface.h"
+
+1359091845 source:/home/jesse/TestCB/SDLBasics/CApp_OnCleanup.cpp
+	"CApp.h"
+
+1359282824 source:/home/jesse/TestCB/SDLBasics/CApp_OnEvent.cpp
+	"CApp.h"
+
+1357674468 source:/home/jesse/TestCB/SDLBasics/CApp_OnLoop.cpp
+	"CApp.h"
+
+1400242624 source:/home/jesse/TestCB/SDLBasics/CApp_OnRender.cpp
+	"CApp.h"
+
+1359304706 source:/home/jesse/TestCB/SDLBasics/CApp_OnInit.cpp
+	"CApp.h"
+
+1359093029 /home/jesse/TestCB/SDLBasics/CSurface.h
+	<SDL.h>
+
+1359093427 source:/home/jesse/TestCB/SDLBasics/CSurface.cpp
+	"CSurface.h"
+
+1359283487 /home/jesse/TestCB/SDLBasics/CEvent.h
+	<SDL.h>
+
+1359981646 source:/home/jesse/TestCB/SDLBasics/CEvent.cpp
+	"CEvent.h"
+

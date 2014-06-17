@@ -1,0 +1,42 @@
+#include "CApp.h"
+#include <iostream> // Added by JG for console output 1/8/13
+
+using namespace std; // Added by JG for console output 1/8/13
+
+//Constructor for CApp class to initialize members
+CApp::CApp(){
+    Surf_Display = NULL;
+    Surf_Test = NULL;
+
+    running = true;
+}
+
+int CApp::OnExecute(){
+    if(OnInit() == false){
+        return -1;
+    }
+
+    SDL_Event Event;
+
+    while(running){
+        while(SDL_PollEvent(&Event)){
+            OnEvent(&Event);
+        }
+
+        OnLoop();
+        OnRender();
+    }
+
+    OnCleapup();
+
+
+    return 0;
+}
+
+int main(int argc, char* argv[]){
+    CApp theApp;
+
+    cout << "I LOVE GAME PROGRAMMING!!!";
+
+    return theApp.OnExecute();
+}
