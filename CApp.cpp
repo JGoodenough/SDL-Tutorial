@@ -36,7 +36,14 @@ int CApp::OnExecute(){
 int main(int argc, char* argv[]){
     CApp theApp;
 
-    cout << "I LOVE GAME PROGRAMMING!!!";
+    cout << "I LOVE GAME PROGRAMMING!!!" << endl;
+
+    // START DISPLAY SDL VERSION
+    SDL_version compiled;
+    SDL_VERSION(&compiled);
+    printf("We compiled against SDL version %d.%d.%d ...\n",
+           compiled.major, compiled.minor, compiled.patch);
+    // END DISPLAY SDL VERSION
 
     return theApp.OnExecute();
 }
