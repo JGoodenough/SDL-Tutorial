@@ -10,7 +10,7 @@ bool CApp::OnInit(){
         return false;
     }
 
-    // old reso: 640 X 480
+    // old reso: 640 w X 480 h
     if((Surf_Display = SDL_SetVideoMode(600, 600, 32, SDL_HWSURFACE | SDL_DOUBLEBUF)) == NULL){
         return false;
     }
