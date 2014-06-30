@@ -11,10 +11,12 @@ bool CApp::OnInit(){
     }
 
     // old reso: 640 w X 480 h
+    //Initialize Main Window for Game
     if((Surf_Display = SDL_SetVideoMode(600, 600, 32, SDL_HWSURFACE | SDL_DOUBLEBUF)) == NULL){
         return false;
     }
 
+    //Initialize Test graphic
     if((Surf_Test = CSurface::OnLoad("./gfx/ben.bmp")) == NULL) {
         return false;
     }
