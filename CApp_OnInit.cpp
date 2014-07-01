@@ -10,9 +10,9 @@ bool CApp::OnInit(){
         return false;
     }
 
-    // old reso: 640 w X 480 h
+    // old reso: 1024 w X 768 h
     //Initialize Main Window for Game
-    if((Surf_Display = SDL_SetVideoMode(600, 600, 32, SDL_HWSURFACE | SDL_DOUBLEBUF)) == NULL){
+    if((Surf_Display = SDL_SetVideoMode(1024, 768, 32, SDL_HWSURFACE | SDL_DOUBLEBUF)) == NULL){
         return false;
     }
 
