@@ -36,9 +36,6 @@ int CApp::OnExecute(){
 int main(int argc, char* argv[]){
     CApp theApp;
 
-    // Comment for I LOVE GAME PROGRAMMING!
-    cout << "I LOVE GAME PROGRAMMING!!!" << endl;
-
     // START DISPLAY SDL VERSION
     SDL_version compiled;
     SDL_VERSION(&compiled);
