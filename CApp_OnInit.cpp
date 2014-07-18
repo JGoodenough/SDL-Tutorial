@@ -16,6 +16,7 @@ bool CApp::OnInit(){
         return false;
     }
 
+
     //Initialize Test graphic
     if((Surf_Test = CSurface::OnLoad("./gfx/ben.bmp")) == NULL) {
         return false;
